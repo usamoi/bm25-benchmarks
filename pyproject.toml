@@ -1,0 +1,18 @@
+[project]
+name = "bm25-benchmarks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "beir>=2.2.0",
+    "bm25s[core]>=0.2.0rc8",
+    "numba>=0.65.0",
+    "psycopg>=3.3.3",
+    "pystemmer>=3.0.0",
+    "rank-bm25",
+    "ujson>=5.12.0",
+]
+
+[tool.uv.sources]
+rank-bm25 = { git = "https://github.com/dorianbrown/rank_bm25", rev = "1abce6cb8bd4a4961f0958391b3eabb749483c01" }
